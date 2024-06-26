@@ -5,34 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Mobile Planet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-    <form id="formularioCadastro">
-        <div class="campoInputEmail">
-            <label for="email">Digite seu Email:</label>
-            <input type="email" class="caixaInput" id="email" placeholder="Insira seu Email" required>
-        </div>
-        <div class="campoInputSenha">
-            <label for="senha">Digite sua senha:</label>
-            <input type="password" maxlength= 8 class="caixaInput" id="senha" placeholder="Insira sua senha" required>
-        </div>
-        <div class="campoInputCPF">
-            <label for="cpf">Digite seu CPF:</label>
-            <input type="text" maxlength= 11 class="caixaInput" id="cpf" placeholder="Insira seu CPF" required>
-        </div>
-        <div class="campoInputCEP">
-            <label for="cep">Digite seu CEP:</label>
-            <input type="number" maxlength= 8 class="caixaInput" id="cep" placeholder="Insira seu CEP" required>
-        </div>
-        <div class="campoInputEndereco">
-            <label for="endereco">Digite seu endereço completo:</label>
-            <input type="text"  class="caixaInput" id="senha" placeholder="Insira sua senha" required>
-        </div>
-        <div class="campoInputEndereco">
-            <label for="endereco">Digite seu endereço completo:</label>
-            <input type="text"  class="caixaInput" id="senha" placeholder="Insira sua senha" required>
-        </div>
-    </form>
-</body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">    
+                <h2 class="text-center">Registre-se</h2>
 
+                <form id="formularioCadastro">
+                    <div class="form-group">
+                        <label for="nome">Digite seu nome e sobrenome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome e Sobrenome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Digite seu Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Insira seu Email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="cpf">Digite seu CPF:</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="Insira seu CPF" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cep">Digite seu CEP:</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Insira seu CEP" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Digite seu telefone:</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Digite seu endereço completo:</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Insira seu endereço" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Digite sua senha:</label>
+                        <input type="password" maxlength="8" class="form-control" id="senha" placeholder="Insira sua senha" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                    <button type="button" class="btn btn-secondary btn-block">Voltar para a Tela Inicial</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mask-plugin/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Aplicar máscaras
+            $('#cpf').mask('000.000.000-00');
+            $('#cep').mask('00000-000');
+            $('#telefone').mask('(00) 00000-0000');
+
+            // Verificar se as máscaras estão funcionando
+            console.log('Máscara de CPF aplicada: ', $('#cpf').val());
+            console.log('Máscara de CEP aplicada: ', $('#cep').val());
+            console.log('Máscara de telefone aplicada: ', $('#telefone').val());
+        });
+    </script>
+</body>
+</html>

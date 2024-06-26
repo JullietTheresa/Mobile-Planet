@@ -1,0 +1,28 @@
+.container {
+    margin-top: 10vh; /* Ajustando margem verticalmente */
+}
+
+h2 {
+    margin-bottom: 30px; /* Aumentando um pouco a margem inferior do título */
+    font-weight: bold; /* Deixando o título mais destacado */
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+    transition: background-color 0.3s ease; /* Adicionando transição suave na mudança de cor */
+}
+
+.btn-primary:hover {
+    background-color: #004080;
+}
+
+.btn-secondary {
+    background-color: #999;
+    border: none;
+    transition: background-color 0.3s ease; /* Adicionando transição suave na mudança de cor */
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
