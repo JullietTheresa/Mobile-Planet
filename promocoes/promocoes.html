@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,46 +9,77 @@
     <link href="promocoes.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">Mobile Planet</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link" href="promocoes.html">Promoções</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../produtos/produtos.html">Produtos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="promocoes.html">Promoções</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="../cadastro/contato.html">Cadastro</a></li>
+                <li class="nav-item"><a class="nav-link" href="../login/login.html">Login</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1>Promoções</h1>
-        <p>Confira nossas promoções exclusivas!</p>
-        <!-- Exemplo de Cards -->
-        <div class="card-deck">
-            <div class="card bg-dark text-white">
-                <img src="imagem1.jpg" class="card-img-top" alt="Promoção 1">
-                <div class="card-body">
-                    <h5 class="card-title">Promoção 1</h5>
-                    <p class="card-text">Descrição da Promoção 1.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
+    
+    <div class="container mt-4">
+        <h1 class="titulo-promocoes">Promoções</h1>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="../produtos/produtos.html" class="card card-promocao">
+                    <img src="../imagens/iphone15.jpg" class="card-img-top" alt="iPhone 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple</h5>
+                        <p class="card-text">Preço Original: R$ 1.200,00</p>
+                        <p class="card-prom">Preço com Promoção: R$ 999,00</p>
+                    </div>
+                </a>
             </div>
-            <div class="card bg-dark text-white">
-                <img src="imagem2.jpg" class="card-img-top" alt="Promoção 2">
-                <div class="card-body">
-                    <h5 class="card-title">Promoção 2</h5>
-                    <p class="card-text">Descrição da Promoção 2.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="../produtos/produtos.html" class="card card-promocao">
+                    <img src="../imagens/Samsung-Flip.jpg" class="card-img-top" alt="Samsung Flip">
+                    <div class="card-body">
+                        <h5 class="card-title">Marca 2</h5>
+                        <p class="card-text">Preço Original: R$ 1.500,00</p>
+                        <p class="card-prom">Preço com Promoção: R$ 1.299,00</p>
+                    </div>
+                </a>
             </div>
-            <!-- Adicione mais cards conforme necessário -->
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="../produtos/produtos.html" class="card card-promocao">
+                    <img src="../imagens/iphone15.jpg" class="card-img-top" alt="iPhone 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple</h5>
+                        <p class="card-text">Preço Original: R$ 1.200,00</p>
+                        <p class="card-prom">Preço com Promoção: R$ 999,00</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="../produtos/produtos.html" class="card card-promocao">
+                    <img src="../imagens/Motorola-Edge50Ultra.jpg" class="card-img-top" alt="Motorola Edge 50 Ultra">
+                    <div class="card-body">
+                        <h5 class="card-title">Marca 2</h5>
+                        <p class="card-text">Preço Original: R$ 1.500,00</p>
+                        <p class="card-prom">Preço com Promoção: R$ 1.299,00</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
