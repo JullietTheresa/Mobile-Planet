@@ -4,3 +4,13 @@
 .content {
     padding-left: 650px;
 }
+body {
+    background-color: #d4cdc5;
+    color: #f4f4f2;
+}
+
+.corFundo {
+    background-color: #c5bfb8;
+    color: #000000;
+    border-color: #c5bfb8;
+}
