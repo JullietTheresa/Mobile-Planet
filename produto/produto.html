@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celular Galaxy S24+</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="produto.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col fixed-img"><img class="fixed-img" src="./imgsProd/celular.png" alt="celular"></div>
+            <div class="col content">
+                <div class="row h2 mt-2">
+                    <div class="col">Celular Samsung Galaxy S24+</div>
+                </div>
+                <div class="row h4">
+                    <div class="col">R$4.199,99</div>
+                </div>
+                <div class="row h5 form-text">
+                    <div class="col mb-2">SM-S926BZVKZTO</div>
+                </div>
+                <div class="row h5">
+                    <div class="col">Quantidade:</div>
+                </div>
+                <div class="dropdown mb-3">
+                    <button id="dropdownButton" class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        1
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </div>
+                <div class="row h5 form-text">
+                    <div class="col">Calcule o frete:</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control mb-2" type="text" name="frete" id="frete">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-secondary mb-3">Calcular</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <button class="btn btn-warning me-2">Adicionar ao carrinho</button>
+                        <button class="btn btn-success">Comprar agora</button>
+                    </div>
+                </div>
+                <div class="row h5">
+                    <div class="col">Especificações técnicas:</div>
+                </div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Modelo</th>
+                            <td>Samsung Galaxy S24 Plus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sistema Operacional</th>
+                            <td>Android 14 Samsung One UI 6.1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dimensões</th>
+                            <td>158.5 x 75.9 x 7.7 mm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Peso</th>
+                            <td>196 gramas</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Resistência a água</th>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Câmera traseira (Megapixels)</th>
+                            <td>50 Mp + 12 Mp + 10 Mp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Câmera frontal (Megapixels)</th>
+                            <td>12 Mp F 2.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="accordion" id="accordionEsp">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Mais Especificações
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionEsp">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Processador</th>
+                                            <td>Samsung Exynos 2400</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Memória RAM</th>
+                                            <td>12 GB</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Armazenamento</th>
+                                            <td>512 GB</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">GPU</th>
+                                            <td>Xclipse 940</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Bateria</th>
+                                            <td>4900 mAh</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tela</th>
+                                            <td>6.7 polegadas, 1440 x 3088 pixel, Dynamic AMOLED 2X, 120 Hz</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Dual Sim</th>
+                                            <td>Sim</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5G</th>
+                                            <td>Sim</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.getElementById('dropdownButton').textContent = this.textContent;
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
