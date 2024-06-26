@@ -12,8 +12,15 @@ body {
     margin-bottom: 40px;
 }
 
+
 .navbar {
     background-color: #191013;
+    justify-content: center; /* Centraliza os itens na barra de navegação */
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: right; /* Centraliza os itens na barra de navegação */
 }
 
 .navbar-dark .navbar-brand {
@@ -27,6 +34,7 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #d4cdc5;
 }
+
 
 .container {
     margin-top: 4rem;
