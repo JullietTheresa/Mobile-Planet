@@ -1,8 +1,31 @@
-
-h1 {
-    margin-bottom: 20px;
+.navbar {
+    background-color: #191013;
+    justify-content: center; /* Centraliza os itens na barra de navegação */
 }
 
-p {
-    font-size: 1.2em;
+.navbar-nav {
+    width: 100%;
+    justify-content: right; /* Centraliza os itens na barra de navegação */
+}
+
+.navbar-dark .navbar-brand {
+    color: #f4f4f2;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f4f4f2;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #d4cdc5;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
 }

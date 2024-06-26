@@ -5,12 +5,16 @@
     padding-left: 650px;
 }
 body {
-    background-color: #d4cdc5;
+    background-color: #eeeeee;
     color: #f4f4f2;
 }
 
-.corFundo {
-    background-color: #c5bfb8;
+/* .corFundo {
+    background-color: #666666;
     color: #000000;
     border-color: #c5bfb8;
+} */
+
+.col {
+    color: black;
 }
