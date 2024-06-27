@@ -1,12 +1,11 @@
 /* login.css */
 
 body {
-    background-color: #d4cdc5;
-    color: #f4f4f2;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
 h2 {
-    color: #243a69;
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold; /* Deixando o título mais destacado */
@@ -32,13 +31,11 @@ h2 {
 }
 
 .form-group label {
-    color: #243a69;
+    color: #000000;
 }
 
 .form-control {
-    background-color: #191013;
     color: #f4f4f2;
-    border: 1px solid #5b88a5;
 }
 
 .form-control::placeholder {
@@ -46,13 +43,13 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #243a69;
+    background-color: #0066cc;
     border: none;
     transition: background-color 0.3s ease; /* Adicionando transição suave na mudança de cor */
 }
 
 .btn-primary:hover {
-    background-color: #5b88a5;
+    background-color: #004080;
 }
 
 .btn-secondary {
