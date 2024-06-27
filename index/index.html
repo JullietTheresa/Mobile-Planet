@@ -8,46 +8,172 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index/index.html">
-            <img src="../imagens/planet.png" alt="Planeta" style="height: 30px; margin-right: 10px;">
-        </a>
-        <span class="navbar-brand">Mobile Planet</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../produto/produto.html">Produto</a></li>
-                <li class="nav-item active"><a class="nav-link" href="promocoes.html">Promoções</a></li>
-                <li class="nav-item"><a class="nav-link" href="../carrinho/carrinho.html">Carrinho</a></li>
-                <li class="nav-item"><a class="nav-link" href="../login/login.html">Login</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index/index.html">
+                <img src="../imagens/planet.png" alt="Planeta" style="height: 30px; margin-right: 10px;">
+            </a>
+            <span class="navbar-brand">Mobile Planet</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../produto/produto.html">Produto</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="promocoes.html">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../carrinho/carrinho.html">Carrinho</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../login/login.html">Login</a></li>
+                </ul>
+                <form class="d-flex mx-auto" style="width: 50%;" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                </form>
+            </div>
         </div>
     </nav>
+    
 
-    <div id="carouselprincipal" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../imagens/iphone-15-disponivel.png">
+    <!-- Cabeçalho com Carrossel -->
+    <header class="bg-light">
+        <div id="carouselprincipal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselprincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselprincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselprincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-item">
-                <img src="../imagens/Motorola-Edge50Ultra.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../imagens/Samsung-Flip.jpg" class="d-block w-100" alt="...">
-              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagens/iphone-15-disponivel.png" class="d-block w-100" alt="iPhone 15 disponível">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>iPhone 15</h5>
+                        <p>Disponível agora!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagens/Galaxy_A_Series.png" class="d-block w-100" alt="Motorola Edge 50 Ultra">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Séries A dos celulares Galaxy</h5>
+                        <p>Encontre a linha completa dos modelos "A" da Samsung!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagens/linha_xiaomi.webp" class="d-block w-100" alt="linha_xiaomi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Celulares Xiaomi</h5>
+                        <p>Toda a linha Xiaomi você encontra aqui!</p>
+                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselprincipal" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselprincipal" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section class="container my-4">
+        <h2 class="text-center mb-4">Mais procurados do Site</h2>
+        <div id="carouselprodutos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto1.jpg" class="card-img-top" alt="Produto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy S24</h5>
+                                    <p class="card-text">R$ 4199,99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto2.jpg" class="card-img-top" alt="Produto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy A55</h5>
+                                    <p class="card-text">R$ 1850,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto3.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Xiaomi 14</h5>
+                                    <p class="card-text">R$ 5549,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto4.jpg" class="card-img-top" alt="Produto 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Apple iPhone 15</h5>
+                                    <p class="card-text">R$ 4700,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto5.jpg" class="card-img-top" alt="Produto 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Xiaomi Redmi Note 13</h5>
+                                    <p class="card-text">R$ 1260,99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto6.jpg" class="card-img-top" alt="Produto 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy A35</h5>
+                                    <p class="card-text">R$ 1619,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto7.jpg" class="card-img-top" alt="Produto 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Huawei Honor 90</h5>
+                                    <p class="card-text">R$ 3700,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="../imagens/produto8.jpg" class="card-img-top" alt="Produto 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Pixel 8a</h5>
+                                    <p class="card-text">R$ 4188,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselprodutos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselprodutos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
