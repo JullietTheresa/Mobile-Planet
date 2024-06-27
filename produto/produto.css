@@ -4,8 +4,12 @@
 .content {
     padding-left: 650px;
 }
+header {
+    margin-bottom: 30px;
+}
 body {
     background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
 .borderDrop{
@@ -20,24 +24,20 @@ body {
 
 .navbar {
     background-color: #191013;
-    justify-content: center;
 }
 
 .navbar-nav {
     width: 100%;
-    justify-content: right;
+    justify-content: flex-end; 
 }
 
-.navbar-dark .navbar-brand {
-    color: #f4f4f2;
-}
-
+.navbar-dark .navbar-brand,
 .navbar-dark .navbar-nav .nav-link {
     color: #f4f4f2;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
+    color: #d4cdc5;
 }
 
 .navbar-brand img {
