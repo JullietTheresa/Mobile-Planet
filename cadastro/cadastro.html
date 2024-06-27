@@ -19,7 +19,6 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
     </nav>
     <div class="container">
         <div class="row justify-content-center">
@@ -62,9 +61,29 @@
                         <input type="password" maxlength="8" class="form-control" id="senha" placeholder="Insira sua senha" required>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block" onclick="window.location.href='../login/login.html'">Registrar</button>
+                    <button type="button" class="btn btn-primary btn-block" id="registrarBtn">Registrar</button>
                     <button type="button" class="btn btn-secondary btn-block" onclick="window.location.href='../login/login.html'">Voltar para a Tela Inicial</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registroModalLabel">Usuário Registrado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Usuário registrado com sucesso!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalCloseBtn">Fechar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -72,17 +91,22 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
             // Aplicar máscaras
             $('#cpf').mask('000.000.000-00');
             $('#cep').mask('00000-000');
             $('#telefone').mask('(00) 00000-0000');
+        });
 
-            // Verificar se as máscaras estão funcionando
-            console.log('Máscara de CPF aplicada: ', $('#cpf').val());
-            console.log('Máscara de CEP aplicada: ', $('#cep').val());
-            console.log('Máscara de telefone aplicada: ', $('#telefone').val());
+        document.getElementById('registrarBtn').addEventListener('click', function() {
+            $('#registroModal').modal('show');
+        });
+
+        $('#registroModal').on('hidden.bs.modal', function () {
+            window.location.href = '../login/login.html';
         });
     </script>
 </body>
