@@ -26,3 +26,7 @@ h2 {
 .btn-secondary:hover {
     background-color: #666;
 }
+
+body {
+    background-color: #d4cdc5;
+}
